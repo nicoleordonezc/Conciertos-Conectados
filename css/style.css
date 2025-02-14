@@ -4,3 +4,138 @@
     margin: 0;
     box-sizing: border-box;
 }
+.main {
+    padding-top: 45px;
+    padding-bottom: 45px;
+    padding-left: 21px;
+    padding-right: 21px;
+    background: var(--color-1);
+}
+.header__container {
+    width: 346px;
+    height: 231px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.div__menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 346px;
+    
+}
+.div__menu img{
+    width: 32px;
+    height: 32px;
+}
+.div__menu img:last-child{
+    width: 25px;
+    height: 25px;
+    /* margin-right: 18px; */
+}
+.div__title{
+    width: 265px;
+    height: 72px;
+}
+.div__title h1{
+    font-family: "Inter-SemiBold";
+    font-size: 30px;
+    color: var(--color-2);
+    line-height: 36px;
+}
+.div__title strong{
+    color: var(--color-10);
+}
+
+/************** search bar ***************/
+.div__search {
+    width: 345px;
+    height: 85px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.div__search-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.div__search img:first-child{
+    width: 17px;
+    height: 17px;
+}
+.div__search input{
+    width: 288px;
+    height: 17px;
+    border: none;
+}
+.div__search input::placeholder{
+    font-family: "Inter-Regular";
+    font-size: 12px;
+    color: var(--color-2);
+}
+.div__search img:last-child{
+    width: 17px;
+    height: 17px;
+}
+.div__options {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    width: 390px;
+    overflow-x: scroll;
+    
+}
+.div__options  h2{
+    font-family: "Inter-Regular";
+    font-size: 12px;
+    color: var(--color-2);
+    font-weight: 100;
+}
+.div__options a:nth-child(1){
+    background-color: var(--color-12);
+    width: 112px;
+    height: 28px;
+    text-decoration: none;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.div__options a:nth-child(2){
+    background-color: var(--color-14);
+    width: 76px;
+    height: 28px;
+    text-decoration: none;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div__options a:nth-child(3){
+    background-color: var(--color-13);
+    width: 104px;
+    height: 28px;
+    text-decoration: none;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.div__options a:nth-child(4){
+    background-color: var(--color-11);
+    width: 63px;
+    height: 28px;
+    text-decoration: none;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
