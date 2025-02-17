@@ -9,14 +9,15 @@
     padding-bottom: 45px;
     padding-left: 21px;
     padding-right: 21px;
-    background: var(--color-1);
+    background-image: url(../storage/img/background.png);
 }
 .header__container {
     width: 346px;
-    height: 231px;
+    height: auto;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding-bottom: 40px;
 }
 .div__menu {
     display: flex;
@@ -30,10 +31,18 @@
     width: 25px;
     height: 25px;
 }
-.div__menu img:last-child{
-    width: 25px;
-    height: 25px;
-    /* margin-right: 18px; */
+.div__bell{
+    width: 34px;
+    height: 34px;
+    border-radius: 6px;
+    background: var(--color-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div__bell img{
+    width: 20px;
+    height: 20px;
 }
 .div__title{
     width: 265px;
@@ -52,16 +61,20 @@
 /************** search bar ***************/
 .div__search {
     width: 345px;
-    height: 85px;
+    height: auto;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 16px;    
 }
 .div__search-bar{
+    width: 346px;
+    height: 41px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
+    border-radius: 10px;
+    background: var(--color-1);
     
 }
 .div__search img:first-child{
@@ -72,11 +85,15 @@
     width: 288px;
     height: 17px;
     border: none;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 .div__search input::placeholder{
     font-family: "Inter-Regular";
     font-size: 12px;
     color: var(--color-2);
+    width: 82px;
 }
 .div__search img:last-child{
     width: 17px;
@@ -87,8 +104,9 @@
     flex-direction: row;
     gap: 12px;
     width: 346px;
+    height: auto;
     overflow-x: scroll;
-    
+    scrollbar-width: none;
 }
 .div__options  h2{
     font-family: "Inter-Regular";
@@ -97,6 +115,7 @@
     font-weight: 100;
 }
 .div__options a:nth-child(1){
+    white-space: nowrap;
     background-color: var(--color-12);
     width: 112px;
     height: 28px;
@@ -105,6 +124,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 6.5px 14px ;
     
 }
 .div__options a:nth-child(2){
@@ -116,8 +136,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 6.5px 14px ;
 }
 .div__options a:nth-child(3){
+    display: inline-block;
+    white-space: nowrap;
     background-color: var(--color-13);
     width: 104px;
     height: 28px;
@@ -126,6 +149,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 6.5px 14px ;
 
 }
 .div__options a:nth-child(4){
@@ -137,7 +161,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 6.5px 14px ;
 }
+/***************** Middle *****************************/
 .section__container {
     display: flex;
     flex-direction: column;
@@ -157,17 +183,175 @@
 .div__top span{
     font-family: "Inter-Regular";
     font-size: 12px;
-    color: var(--color-2);
+    color: var(--color-6);
     
 }
-.div__flyer {
+.section__flyers{
+    display: flex;
+    flex-direction: row;
+    gap: 19px;
+    overflow-x: scroll;
+}
+.article__flyer {
     background-image: url(../storage/img/coldplay.svg);
+    width: 346px;
+    height: 186px;
+    display: flex;
+    justify-content: center;
+    padding-top: 88px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+.div__container{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 186px;
+    width: 332px;
+    height: 90px;
+    gap: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(12px);
+    background: var(--color-5);
+
 }
 .div__name {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 184px;
+    height: 57px;
 }
+.div__name h2{
+    font-family: "Inter-SemiBold";
+    font-size: 12px;
+    color: var(--color-1);
+}
+.div__name-info{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+.div__name-info img{
+    width: 10px;
+    height: 12px;
+}
+.div__name-info p{
+    font-family: "Inter-Regular";
+    font-size: 12px;
+    color: var(--color-1);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
 .div__right-side {
+    width: 102px;
+    height: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.div__right-side span{
+    font-family: "Inter-Regular";
+    font-size: 10px;
+    color: var(--color-1);
+}
+.div__right-side h1{
+    font-family: "Inter-SemiBold";
+    font-size: 16px;
+    color: var(--color-1);
+}
+.article__flyer-2{
+    background-image: url(../storage/img/big-muse.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 186px;
+    display: flex;
+    justify-content: center;
+    padding-top: 88px;
+    padding-right: 7px;
+    padding-left: 7px;
+}
+
+/*********************** bottom **************************/
+
+.section__bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.article__bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.article__bottom h2{
+    font-family: "Inter-SemiBold";
+    font-size: 14px;
+    color: var(--color-2);
+}
+.article__bottom span{
+    font-family: "Inter-Regular";
+    font-size: 10px;
+    color: var(--color-6);
+}
+.div__box {
+   width: 348px;
+   height: 203px;
+   display: flex;
+   flex-direction: row;
+   gap: 16px;
+}
+.div__ticket {
+    width: 166px;
+    height: 203px;
+    padding: 8px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: var(--color-1)
+}
+.div__ticket img{
+    width: 150px;
+    height: 102px;
+}
+.div__ticket h2{
+    font-family: "Inter-SemiBold";
+    font-size: 10px;
+    color: var(--color-2);
+}
+.div__bottom-info {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    
+}
+.div__bottom-info::after{
+    background-color: rgba(255, 0, 0, 0.5); /* Rojo semi-transparente */
+    mix-blend-mode: multiply;
+}
+.div__bottom-info img{
+    width: 10px;
+    height: 11px;
+    filter: saturate(--color-4);
+}
+.div__bottom-info p{
+    font-family: "Inter-Regular";
+    font-size: 10px;
+    color: var(--color-2);
+}
+.div__bottom-info-end {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+}
+.div__bottom-info-end img{
+    width: 16px;
+    height: 16px;
+}
+.div__bottom-info-end p{
+    font-family: "Inter-SemiBold";
+    font-size: 12px;
+    color: var(--color-3);
 }
