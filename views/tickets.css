@@ -7,9 +7,9 @@
 }
 
 body{
-    background:linear-gradient(180deg, #91B5FD, #F0DDFF);
+    background:linear-gradient(180deg, #91B5FD 0%, #F0DDFF 100%);
     background-repeat: no-repeat;
-    
+
 }
 .header__container {
     display: flex;
@@ -56,13 +56,14 @@ main{
 }
 .div__title {
     padding-top: 16px;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
 }
 .div__title h1{
     font-family: "Inter-SemiBold";
     font-size: 18px;
     color: var(--color-2);
     padding-bottom: 8px;
+    font-weight: 400;
 }
 .div__title span{
     font-family: "Inter-Regular";
@@ -78,7 +79,7 @@ main{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 20px;
+    padding-top: 10px;
 }
 .div__caja{
     display: flex;
@@ -100,15 +101,9 @@ main{
     font-family: "Inter-SemiBold";
     font-size: 14px;
     color: var(--color-2);
+    font-weight:400;
 }
 .div__lines{
-    padding-top: 29px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    background: transparent;
-    width: 344px;
-    height: 35px;
     position: relative;
     right: 18px;
     top: 40px;
