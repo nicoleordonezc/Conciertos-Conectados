@@ -154,9 +154,8 @@ main{
     font-size: 14px;
     color: var(--color-2);
 }
-.div__maps img{
-    width: 342px;
-    height: 212px;
+.iframe{
+  
 }
 .footer {
     width: 390px;
