@@ -1,7 +1,215 @@
-@import url(variables.css);
+@import url(../css/variables.css);
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header__container {
+    width: 100%;
+    height: 316px;
+    background-image: url(../storage/img/detail-coldplay.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 35px;
+    padding-left: 22px;
+    padding-right: 22px;
+}
+.div__arrow a{
+    width: 34px;
+    height: 34px;
+    background: var(--color-15);
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div__arrow img{
+    width: 10px;
+    height: 10px;
+}
+.div__box {
+    width: 100%;
+    height: 140px;
+    background: var(--color-1);
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 28.5px 20px;
+    position: relative;
+    top: 180px;
+    box-shadow: 0px 3px 10px var(--color-16)
+}
+.div__title {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.div__title h2{
+    font-family: "Inter-SemiBold";
+    font-size: 14px;
+    color: var(--color-2);
+    font-weight: 100;
+}
+.div__title strong{
+    color: var(--color-10);
+    font-weight: 100;
+}
+.div__info {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+.div__info img{
+    width: 10px;
+    height: 12px;
+}
+.div__info span{
+    font-family: "Inter-Regular";
+    font-size: 12px;
+    color: var(--color-2);
+}
+.div__bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+.div__bottom-box {
+    width: 60px;
+    height: 28px;
+    display: flex;
+    flex-direction: row;
+}
+.div__bottom-box img{
+    width: 28px;
+    height: 28px;
+}
+.div__bottom-box img:nth-child(1){
+
+}
+.div__bottom-box img:nth-child(2){
+    position: relative;
+    right: 10px;
+}
+.div__bottom-box img:nth-child(3){
+    position: relative;
+    right: 20px;
+}
+.div__bottom-box-2 {
+}
+.div__bottom-box-2 p{
+    font-family: "Inter-Medium";
+    font-size: 12px;
+    color: var(--color-2);
+}
+/************** middle ******************/
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section__description{
+    padding-top: 98px;
+}
+.article__description{
+    width: 346px;
+    height: 133px;
+}
+.article__description span{
+    font-family: "Inter-Medium";
+    font-size: 14px;
+    color: var(--color-2);
+}
+.div__p{
+    padding-top: 8px;
+
+    display:-webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;
+    overflow: hidden;
+    white-space: wrap;
+    text-overflow: ellipsis;
+
+}
+.div__p p{
+    font-family: "DMSans-Medium";
+    font-size: 12px;
+    line-height: 18px;
+    color: var(--color-17);
+    text-align: left;
+}
+.section__description a{
+    color: var(--color-18);
+    text-decoration: none;
+}
+.section__map {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 28px 22px;
+    gap: 12px;
+}
+.article__map{
+
+}
+.div__maps {
+}
+.section__map span{
+    font-family: "Inter-Medium";
+    font-size: 14px;
+    color: var(--color-2);
+}
+iframe{
+    border-radius: 10px;
+}
+.footer {
+    width: 390px;
+    position: sticky;
+    bottom: 0;
+    box-shadow: 0px -2px 20px var(--color-16)
+
+}
+.div__footer {
+    background: var(--color-1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 16px 22px;
+
+}
+.div__footer a{
+    font-family: "Inter-Medium";
+    font-size: 14px;
+    color: var(--color-1);
+    text-decoration: none;
+    background: var(--color-10);
+    width: 110px;
+    height: 34px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div__buy {
+}
+.div__buy span{
+    font-family: "Inter-Regular";
+    font-size: 10px;
+    color: var(--color-2);
+}
+.div__buy h2{
+    font-family: "Inter-SemiBold";
+    font-size: 16px;
+    color: var(--color-2);
 }
